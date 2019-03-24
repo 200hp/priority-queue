@@ -16,7 +16,8 @@ class Node {
 	}
 
 	remove() {
-
+		if (this.parent === null) return;
+		this.parent.removeChild(this);
 	}
 
 	swapWithParent() {
